@@ -5,6 +5,16 @@ def encoder(number): #Riley Ward
         x = str(x)
         encoded += x
     return encoded
+def decoder(new_password):
+    decoded_password = ""
+    for char in new_password:
+        x = int(char)-3
+        decoded_password +=str(x)
+    return decoded_password
+
+
+
+
 
 while True:
     print("Menu")
